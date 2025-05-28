@@ -14,26 +14,28 @@ import {
 
 import { TEST_IDS } from '../../constants/testIds';
 
-interface MultiSelectInputProps {
+interface SelectInputProps {
   fieldName: string;
   selectableOptions: string[];
+  isMultiSelect?: boolean;
 }
 
 const StyledFormControlWrapper = styled(FormControl)(({ theme }) => ({
   marginTop: theme.spacing(1),
   marginBottom: theme.spacing(1),
   marginRight: theme.spacing(1),
-  minWidth: 100,
+  minWidth: 150,
 }));
 
 const StyledSelect = styled(Select)(() => ({
   borderRadius: 50,
 }));
 
-const MultiSelectInput = ({
+const SelectInput = ({
   fieldName,
   selectableOptions,
-}: MultiSelectInputProps) => {
+  isMultiSelect = false,
+}: SelectInputProps) => {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
 
   const handleChange = (event: SelectChangeEvent<unknown>) => {
@@ -50,9 +52,9 @@ const MultiSelectInput = ({
       <StyledFormControlWrapper size='small'>
         <InputLabel id='fieldName'>{fieldName}</InputLabel>
         <StyledSelect
-          data-testid={TEST_IDS.MULTI_SELECT.ROOT(fieldName)}
-          id={`multiselect-${fieldName}`}
-          multiple
+          data-testid={TEST_IDS.SELECT_INPUT.ROOT(fieldName)}
+          id={`select-${fieldName}`}
+          multiple={isMultiSelect}
           value={selectedOptions}
           onChange={handleChange}
           input={<OutlinedInput label={fieldName} />}
@@ -62,7 +64,7 @@ const MultiSelectInput = ({
             <MenuItem
               key={option}
               value={option}
-              data-testid={TEST_IDS.MULTI_SELECT.MENU_ITEM(fieldName, option)}
+              data-testid={TEST_IDS.SELECT_INPUT.MENU_ITEM(fieldName, option)}
             >
               <Checkbox checked={selectedOptions.includes(option)} />
               <ListItemText primary={option} />
@@ -74,4 +76,4 @@ const MultiSelectInput = ({
   );
 };
 
-export default MultiSelectInput;
+export default SelectInput;

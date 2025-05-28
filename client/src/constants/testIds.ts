@@ -1,7 +1,7 @@
 export const TEST_IDS = {
-  MULTI_SELECT: {
-    ROOT: (field: string) => `multiselect-${field}`,
+  SELECT_INPUT: {
+    ROOT: (field: string) => `select-${field}`,
     MENU_ITEM: (field: string, option: string) =>
-      `multiselect-${field}-option-${option}`,
+      `select-${field}-option-${option}`,
   },
 };
