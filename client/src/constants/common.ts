@@ -6,4 +6,5 @@ export const UI_TEXT = {
   LOAD_MORE: 'Load More',
   LOADING: 'Loading...',
   SORT_LABEL: 'Sort:',
+  DISCLAIMER_QUERY_LIMIT: 'Please note that search API only allows us to retrieve 240 businesses. Anything over it will throw an error.'
 };

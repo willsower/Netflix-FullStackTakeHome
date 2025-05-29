@@ -58,7 +58,7 @@ const BusinessesList = () => {
             "{searchKey}" restaurants near {selectedLocation}
           </BoldTitle>
           <LightTitle variant='caption'>
-            {total ? total : 0} total results
+            {total ? total : 0} - {UI_TEXT.DISCLAIMER_QUERY_LIMIT}
           </LightTitle>
         </Box>
 
