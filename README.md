@@ -1,13 +1,14 @@
-# Netflix-FullStackTakeHome
+#Netflix-FullStackTakeHome
 
 ![](./assets/UI.gif)
 
 ## Setup
 
-1. Clone GitHub Package `gh repo clone willsower/Netflix-FullStackTakeHome`
+1. Clone GitHub Package `git clone https://github.com/willsower/Netflix-FullStackTakeHome.git`
 2. In the root directory run `npm run install-all` to install all dependencies in the root and sub directories (client/server)
 3. In the `/server` directory, create a `.env` file and add your Yelp API Key under the alias `YELP_API_KEY=api-key-here`
 4. Run the application with `npm run dev` in the root directory
+5. Access the app running `http://localhost:5173/` in your browser
 
 By default, the client runs on `localhost:5173` (Vite), and the Express backend runs on `localhost:3001`
 
