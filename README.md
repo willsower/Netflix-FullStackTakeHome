@@ -51,6 +51,7 @@ These are the things I would have liked to add but didn't due to the 4 hour time
 - Styled (MUI term) maybe could have them in dedicated files (probably goes with having more time for the styling)
 - Ensuring components were accessibility compliant (e.g., can be accessed properly and have screen readers view)
 - Local Storage on the filters: This wasn't necessarily a requirement but it would be something I would've asked if the end user would want their settings saved (which could be done via local storage based on url)
+- Documentation within code: Some common components should contain at the very least tsdocs (such as SelectInput on usability). I use comments sparingly because I believe code should be readable without, however when it's a common component that acts as a lib, then I need to add
 - Additional information for the components by calling BusinessDetails (for description) of place (this probably would need to be a batch call or Promise.all)
 - Better error handling, where API would display error messaging on the UI (this could be done via Snackbar or Alert component in React and I probably would've made a useMessage hook for displaying)
   - 404 Page since if user goes to any other page than `/` it will just error
