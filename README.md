@@ -2,6 +2,13 @@
 
 ## Setup
 
+1. Clone GitHub Package `gh repo clone willsower/Netflix-FullStackTakeHome`
+2. In the root directory run `npm run install-all` to install all dependencies in the root and sub directories (client/server)
+3. In the `/server` directory, create a `.env` file and add your Yelp API Key under the alias `YELP_API_KEY=api-key-here`
+4. Run the application with `npm run dev` in the root directory
+
+By default, the client runs on `localhost:5173` (Vite), and the Express backend runs on `localhost:3001`
+
 ## Overview
 
 **Frontend**
@@ -14,7 +21,7 @@
 ## What I focussed On
 
 - Backend Design: Focussed on server mapping. (e.g., Models/Request/Response from Yelp API -> My Server <--> UI Client)
-- Modular Code: Tried to maintain modularity throughout my code. Avoided hardcoding (e.g., didn't tie everything to "Boba") in case in future we want to update our search params
+- Modularity: Tried to maintain modularity throughout my code. Avoided hardcoding (e.g., didn't tie everything to "Boba") in case in future we want to update our search params
   - Made common re-usable components such as the Select Input component (can be used for multi select if needed, single select, and the sort that we have here)
 - UI/UX: Initially wasexploring DataGrid MUI/Card Layouts. Realized it limited a lot of the user experience and wasn't very clean (saw inspiration from other websites like the yelp or google maps search).
 - Created mock data in the `__mocks__` folder for my own testing (no time for UTs sadly, just user testing on my end)
