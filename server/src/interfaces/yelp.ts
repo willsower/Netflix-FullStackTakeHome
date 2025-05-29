@@ -9,6 +9,13 @@ export interface YelpBusiness {
   price: string;
   distance: number;
   imageUrl: string;
+  websiteUrl: string;
+  categories: YelpBusinessCategory[];
+}
+
+export interface YelpBusinessCategory {
+  alias: string;
+  title: string;
 }
 
 export interface YelpSearchResponse {

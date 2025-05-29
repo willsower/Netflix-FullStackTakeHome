@@ -12,6 +12,8 @@ export const transformListBusinessesResponse = (
       price: business.price || '',
       distance: business.distance,
       imageUrl: business.image_url,
+      websiteUrl: business.url,
+      categories: business.categories,
     })
   );
 
