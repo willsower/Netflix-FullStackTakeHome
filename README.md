@@ -1,5 +1,7 @@
 # Netflix-FullStackTakeHome
 
+![](./assets/UI.gif)
+
 ## Setup
 
 1. Clone GitHub Package `gh repo clone willsower/Netflix-FullStackTakeHome`
