@@ -13,6 +13,8 @@ By default, the client runs on `localhost:5173` (Vite), and the Express backend 
 
 ## Overview
 
+This project utilizes the [Yelp Business Search API](https://docs.developer.yelp.com/reference/v3_business_search). You can retrieve your developer key from this site after logging in.
+
 **Frontend**
 - React / Vite
 - Material UI
@@ -34,6 +36,7 @@ By default, the client runs on `localhost:5173` (Vite), and the Express backend 
 - MUI Data Grid vs Custom List View: Data Grid would have sped up my development so I could'vde focussed on the additional features below (in the I did not complete). But quality > quantity and I thought DataGrid was clunky for this use case (e.g., custom list for better user experience and flexibility since it's easier for cursor based pagination instead of clicking next/back on data grid)
 - Folder structure in Server...I think DDD (Domain Driven Design) is becoming more popular these days and having all your files within the scope of a sub folder (same with UI). I didn't think this was necessary for the scope of this project so maintained the normal file structure you would see (e.g., controllers, routes, services)
 - Netflix Office Display (Radio Buttons vs DropDown): May not be a big thing but I would probably have it be a search for location long term. I thought radio buttons would be okay since it's only three but wouldn't scale. To stay in the confines of the problem decided to create a modular select input instead so it could be reused (which is more scalable than a radio)
+- Reset offset on filter change & sort change vs keeping offset: Decided to reset on this to keep things simple. I think maybe for sort it might be good to keep the amount, however this could be discussed as a requirement down the road.
 
 ## Things I Noted But Did Not Complete
 
