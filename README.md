@@ -1,4 +1,4 @@
-#Netflix-FullStackTakeHome
+# Netflix-FullStackTakeHome
 
 ![](./assets/UI.gif)
 
@@ -56,6 +56,6 @@ These are the things I would have liked to add but didn't due to the 4 hour time
 - Better error handling, where API would display error messaging on the UI (this could be done via Snackbar or Alert component in React and I probably would've made a useMessage hook for displaying)
   - 404 Page since if user goes to any other page than `/` it will just error
 - Unit Tests via Jest were skipped, Integration tests via Cypress were skipped
-- Having a proper Mono Repo setup (e.g., Using Lerna or some other monorepo framework). However usually on scale I opt into seperating the repositories out from backend, frontend, and some sort of shared (so we don't have the duplicate types/interfaces between the two repositories)
+- Having a proper Mono Repo setup (e.g., Using Lerna or some other monorepo framework). However usually on scale I opt into separating the repositories out from backend, frontend, and some sort of shared (so we don't have the duplicate types/interfaces between the two repositories)
 - Have 2x `any's` in the `transformers` folder, this is more because it's the response of the API Request from yelp, however would like to see if there was a library or something I could do to use instead of any
 - More time on styling (I think the UI could be a little cleaner, but it gets the message across and I'm proud of what I did within the 4 hours. It goes by fast!!)
